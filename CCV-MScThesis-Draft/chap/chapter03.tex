@@ -1,0 +1,56 @@
+\section{Objetivos}
+\label{sec:objetivos}
+\subsection{Objetivo General}
+%Desarrollar métodos de optimización en paralelo para la identificación de objetos de fase para la tomografía óptica coherente para diagnosis médico.
+%Mejorar la identificación de objetos de fase en tomografía óptica coherente mediante optimización en paralelo, que ayuden en el diagnosis médico.
+Estabilizar la fase en tomografía óptica de coherencia mediante posprocesamiento.
+
+\subsection{Objetivos Específicos}
+
+\begin{itemize}
+	\item Identificar el estado de arte de la tomografía óptica de coherente en aplicaciones biomédicas.
+	%	\item Implementar un sistema óptico equivalente a los montajes utilizados durante la primera generación de la tomografía óptica coherente.
+	\item Implementar un sistema óptico de prueba de concepto de campo completo en la tomografía de coherencia óptica.
+	%	\item Simular un volumen de datos que represente un objeto característico encontrados en la tomografía óptica coherente.
+	%	\item Simular un volumen de datos que posea las características de los objetos que se pueden encontrar en la tomografía óptica coherente, incluyendo las corrupciones de fase provenientes del muestreo.
+	\item Realizar una simulación del muestreo y la formación de imagen en la tomografía óptica de coherencia, incluyendo elementos de corrupción de fase.
+	%	\item Desarrollar y aplicar un método de optimización de fase que permita encontrar las características del objeto simulado anteriormente.
+	\item Desarrollar un método de posprocesamiento que permita recuperar el mapa de corrupción de la imagen simulada anteriormente.
+	%	\item Definir una métrica del error para evaluar la convergencia del algoritmo de optimización propuesto.
+	\item Comprobar experimentalmente la funcionalidad del algoritmo propuesto con datos experimentales suministrados por el \emph{Wellman Center for Photomedicine, Harvard Medical School and Massachusetts General Hospital}.
+	
+\end{itemize}
+
+
+\section{Metodología}
+\label{sec:metodologia}
+
+Para el desarrollo del trabajo de grado se proponen cinco etapas metodológicas. La primera etapa consiste en la búsqueda bibliográfica y revisión de conceptos fundamentales para el desarrollo del trabajo de grado. La segunda etapa es el estudio teórico y la simulación que permitan implementar los conceptos adquiridos y así generar datos con características conocidas. La tercera etapa consiste en el desarrollo e implementación de algoritmos o procedimientos que permitan resolver el problema planteado anteriormente. La cuarta etapa comprende la puesta práctica de los algoritmos y técnicas desarrollados con datos obtenidos de pacientes en sistemas reales. La última etapa consiste en la validación de los resultados mediante la publicación y la documentación del trabajo de grado.
+
+\subsection{Revisión bibliográfica}
+
+%La revisión bibliográfica es una etapa fundamental en el desarrollo de cualquier actividad investigativa, ya que a partir de las bases teóricas es posible entender los conceptos que fundamentan las propuestas actuales reportadas en la literatura, esta etapa permite también identificar aquellas áreas en las cuales puede mejorarse o modificarse las propuestas actuales e incluso plantear nuevas. La revisión bibliográfica aunque se realizará a lo largo del desarrollo del trabajo de grado, tendrá una mayor importancia al inicio de las actividades. Para el comienzo del trabajo de grado esta actividad se encuentra desarrollada en un $70\%$, los conceptos básicos ya se asumen como apropiados y el restante de la revisión bibliográfica corresponde a una actividad complementaria a la documentación y generación de resultados.
+
+La revisión bibliográfica es una etapa fundamental en el desarrollo de cualquier actividad investigativa, ya que a partir de las bases teóricas es posible entender los conceptos que fundamentan las propuestas actuales reportadas en la literatura y permite brindar un fundamento teórico que explique cómo las propuestas que se realicen pueden efectivamente aportar una solución al problema planteado. La revisión bibliográfica aunque se realizará a lo largo del desarrollo del trabajo de grado, tendrá una mayor importancia al inicio de las actividades. Para el comienzo del trabajo de grado esta actividad se encuentra desarrollada en un $70\%$, los conceptos básicos ya se asumen como apropiados y el restante de la revisión bibliográfica corresponde a una actividad complementaria a la documentación y generación de resultados.
+
+\subsection{Estudio teórico y simulación}
+
+Con una base teórica y conociendo los desarrollos actuales en el área, es posible plantear desde un punto de vista teórico cuáles de las propuestas realizadas como mejoras, modificaciones o implementaciones puede representar la solución más óptima al problema. En esta etapa se busca definir los conceptos de las propuestas, para así identificar una ruta sobre la cuál desarrollar las actividades del trabajo de grado. 
+
+La simulación es una forma de probar las técnicas propuestas a partir de datos que permiten identificar la veracidad y viabilidad experimental que tendrían las propuestas realizadas. La simulación comprende desde el uso de la teoría en la generación de datos con características conocidas, hasta la aplicación experimental de las propuestas conociendo los resultados que se deben obtener. En el desarrollo del trabajo de grado, esta etapa comienza con un avance del $50\%$, siendo ese primer desarrollo, la aplicación inicial de los conceptos para la simulación y recuperación de datos inicial. El porcentaje faltante se encuentra en la aplicación de elementos de corrupción que sean identificables.
+
+\subsection{Desarrollo e implementación}
+
+En esta etapa se realizarán los desarrollos teóricos y computacionales requeridos para la implementación de algoritmos que basados en las propuestas realizadas, solucionan el problema de este trabajo de grado. La aplicación computacional inicialmente con los datos simulados permite identificar las deficiencias y componentes que podrían ser mejoradas en los algoritmos propuestos. Entre las mejoras más comunes que se pueden incorporar se encuentran: reducción en el tiempo de procesamiento, menor sensibilidad ante el ruido, independencia de los datos iniciales, entre otros.
+
+Para el trabajo de grado, esta etapa comienza en un $40\%$ de desarrollo, correspondiente a aplicaciones iniciales de algoritmos de prueba, el porcentaje restante está relacionado con la adaptación de más elementos que permitan al algoritmo tener un funcionamiento óptimo en diferentes tipos de datos.
+
+\subsection{Aplicación experimental}
+
+Luego de que se tenga un algoritmo que funcione con los datos simulados, se procedería a realizar la validación experimental con datos provenientes de pacientes. Con esta implementación se espera que de los datos obtenidos inicialmente sea posible obtener más información sin la necesidad de ingresar nuevamente en el paciente. Como se planteó en el problema, el objetivo es poder identificar el mapa de corrupción de la fase y así obtener la fase real del tomograma. 
+
+Debido a que la toma de datos en pacientes se encuentra regulada por normas internacionales, los datos experimentales los proveerá el \emph{Wellman Center for Photomedicine}, quienes cuentan con la instrumentación requerida y cumplen los requisitos de seguridad para obtener imágenes al interior de los pacientes. En esta actividad aun no hay ningún avance, ya que los algoritmos no se encuentran terminados.
+
+\subsection{Publicación y documentación de resultados}
+
+Uno de los productos de investigación más importante para las instituciones de educación sin lugar a duda son las publicaciones. En este sentido, se espera que del desarrollo del trabajo de grado se obtenga al menos una publicación internacional que dé cuenta de la validez científica a las propuestas, implementaciones y resultados obtenidos. Asimismo, se espera la participación en congresos especializados sobre el tema, que permitan la interacción y difusión de los resultados del trabajo de grado. Esta etapa comprende también la escritura de la tesis como documento final que recopila toda la información que ha sido empleada a lo largo del trabajo de grado. 

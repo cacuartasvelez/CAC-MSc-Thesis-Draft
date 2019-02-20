@@ -1,0 +1,247 @@
+\chapter{Antecedentes y marco teórico}
+\label{chap:Introduccion}
+\section{Tomografía óptica coherente}
+
+\noindent En lo últimos años han aparecido nuevas técnicas para la toma de imágenes en múltiples disciplinas científicas, entre ellas destacan por su alta actividad de investigación, la formación de imágenes biomédicas, impulsado principalmente por el constante desarrollo de dispositivos para telecomunicaciones que han permitido la producción en masa de dispositivos electromagnéticos de alto desempeño a costos relativamente bajos. Como consecuencia de esto, múltiples técnicas para el escaneo materiales altamente dispersivos, como los tejidos biológicos han sido creadas. De estas técnicas surge la tomografía, que es particularmente interesantes por su potencial para realizar imágenes que ayudan al diagnosis médico a través de exámenes no invasivos. La tomografía en general se basa en la creación de ``cortes''  de objetos tridimensionales, que en conjunto generan una imagen en dos o tres dimensiones del objeto en cuestión. Si bien existen diferentes tipos de tomografía, este documento estará dirigido a la técnica que se conoce como tomografía óptica coherente o tomografía óptica de coherencia OCT por sus siglas en inglés (Optical Coherence Tomography).
+
+\emph{La OCT es una técnica no invasiva de imagen tridimensional capaz de producir imágenes con alta resolución lateral a través de muestras dispersivas e inhomogéneas, tales como los tejidos biológicos} \cite{Tomlins}. En sus inicios, las técnicas de OCT se basaron en medidas de profundidad de baja coherencia en el dominio temporal con un interferómetro de luz blanca. La posibilidad de emplear interferómetros de luz blanca para la formación de imágenes tridimensionales en tejidos biológicos fue liderada por Huan \etal en 1991 \cite{Huang}, quienes propusieron emplear reflectometría de baja coherencia en sistemas biológicos. Su sistema de OCT se basa en múltiples escaneos de una serie de ubicaciones laterales para proveer un mapa de sitios o lugares en donde la muestra refleja, en su artículo, discuten también como a diferencia de la microscopía confocal, en donde la resolución longitudinal depende de la apertura numérica, en OCT la resolución solo está limitada por la longitud de coherencia de la fuente de luz, como consecuencia de esto, OCT puede tener alta resolución en profundidad aun si la apertura del sistema es pequeña.
+
+\section{La tomografía óptica coherente y su papel en la microscopía}
+
+\noindent La OCT tiene diversos aspectos que son comunes al ultrasonido y a la microscopía. Por un lado, la resolución en imágenes de ultrasonido se encuentra en el rango típico de $0.1$ hasta $1mm$ y dependerá de la frecuencia de la onda de sonido que se emplee, los valores típicos para la frecuencia varían entre los $3$ y $40MHz$ \cite{Szabo}, aunque en este rango de frecuencias, es difícil emplear las ondas de sonido en tejidos, ya que éstos además de ser altamente dispersivos, atenúan fuertemente las ondas en unos pocos milímetros. Por otro lado, algunas ramas de la microscopía poseen una alta resolución en imagen de tejidos, por ejemplo, la microscopía confocal, en donde la resolución es de alrededor de $1\mu m$ o inclusive menor. En la microscopía confocal, la resolución está limitada por la difracción, relacionada a su vez con la apertura numérica del sistema y su capacidad de producir imagen se encuentra influenciada principalmente por la degradación de la luz en dispersiones no deseadas, lo que produce un bajo contraste en la señal a medir \cite{Pawley}. 
+
+La OCT por su lado, llena un vacío entre el ultrasonido y la microscopía, ya que el rango de resolución en el cual se mueve la OCT varía entre $1$ y $10 \mu m$, aproximadamente $100$ veces más fino que el ultrasonido, como se presenta en la Fig.~\ref{fig:OCT_Ultrasound_microscopy}. La principal limitación en OCT se encuentra en que la luz es altamente dispersada por muchos tejidos, lo que limita la profundidad de penetración a $\sim 2mm$ en muchos casos.
+%Mientras que una de sus principales ventajas está en su fácil integración en instrumentos médicos, tales como catéteres, endoscopios, laparoscopios o incluso, agujas quirúrgicas que permite hacer imagen de órganos, o incluso, tejidos sólidos en el cuerpo.
+
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[width = \textwidth, keepaspectratio]{img/OCT_Ultrasound_microscopy}
+	\caption[Comparación del ultrasonido, la microscopía y el OCT.]{Comparación del rango de acción del ultrasonido, la microscopía y a OCT. Imagen adaptada de \cite{Tomlins}.}
+	\label{fig:OCT_Ultrasound_microscopy}
+\end{figure}
+
+
+La OCT es análoga al ultrasonido con la diferencia de emplear luz en lugar de sonido, su principio básico se centra en medir la magnitud y el tiempo de retraso (``eco'') que producen las ondas al llegar al objeto deseado, de forma que las retrodipersiones o retroreflecciones en diferentes distancias permite determinar el tamaño de las microestructuras \cite{Szabo}. Como la velocidad del sonido es de alrededor de $1300m/s$ el ultrasonido ha impulsado la creación de sensores y métodos de sensado que permitan una alta tasa de recepción de información, lo que a su vez ha incentivado el desarrollo de equipos para OCT, en especial si se considera que la luz viaja a $3\times 10^8 m/s$ y que las tasas de recepción de datos deben de ser mayores. Una de las principales ventajas de la analogía OCT/ultrasonido se encuentra en su fácil integración en instrumentos médicos, tales como catéteres, endoscopios, laparoscopios o incluso, agujas quirúrgicas que permite hacer imagen de órganos o tejidos sólidos \invivo en el cuerpo.
+
+%La OCT es análoga al ultrasonido, con la diferencia de emplear luz en lugar de sonido. El principio básico de la OCT, es medir la magnitud y el retraso de las retrodipersiones o retroreflecciones de la luz en microestructuras en tejidos, de forma que el tamaño de las microsestructuras puede determinarse a través de la medida del tiempo que tarda el ``eco'' del sonido o la luz en viajar diferentes distancias. El desarrollo de equipos para tratamientos con ultrasonido a su vez ha posibilitado la creación de equipos de bajo costo para OCT, en especial si se considera que la velocidad del sonido es de alrededor de $1300m/s$, mientras que la luz viaja a $3\times 10^8 m/s$. Una de las principales ventajas de la analogía OCT/ultrasonido se encuentra en su fácil integración en instrumentos médicos, tales como catéteres, endoscopios, laparoscopios o incluso, agujas quirúrgicas que permite hacer imagen de órganos o tejidos sólidos \invivo en el cuerpo.
+
+\section{Los inicios de la OCT}
+
+La propuesta de la técnica de tomografía mediante coherencia óptica fue propuesta hacia el año 1991 por Huang \etal \cite{Huang}, sus primeras pruebas fueron realizadas \emph{ex vivo} en la retina y la arteria coronaria, como se muestran en la Fig.~\ref{fig:primerOCTRetina} y \ref{fig:primerOCTArteriaCoronaria} respectivamente. La Fig.~\ref{fig:primerOCTRetina} muestra el contorno de la cabeza del nervio óptico, así como la vasculatura retinal cerca a la cabeza del nervio. Por su parte, la Fig.~\ref{fig:primerOCTArteriaCoronaria} muestra una placa con calcificación fibrosa en la parte derecha del espécimen y una placa de ateroma fibroso en la parte izquierda. Huang \etal proponen una técnica análoga al ultrasonido, pero que en lugar de emplear ondas de sonido, emplea luz para realizar reconstrucciones tridimensionales a partir de escaneos bidimensionales, a esta técnica la denominarían tomografía óptica de coherencia, y se basa esencialmente en el empleo de un interferómetro de luz blanca. Con los resultados obtenidos por Huang \etal la OCT se ha posicionado como una de las más grandes aplicaciones emergentes para el diagnosis oftalmológico e intravascular.
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[width = \textwidth, keepaspectratio]{img/primerOCTRetina}
+\caption[Primer tomograma con OCT: Retina.]{Primera imagen obtenida con OCT de la retina humana \emph{ex vivo}. La imagen se capturó con $15\mu m$ de resolución axial con una longitud de onda de $830 nm$. La imagen tiene un color falso en escala logarítmica en el rango $[-60, -90]dB$. Tomada de Huang \emph{et al.} \cite{Huang}.}
+\label{fig:primerOCTRetina}
+\end{figure}
+
+
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[width = \textwidth, keepaspectratio]{img/primerOCTArteriaCoronaria}
+	\caption[Primer tomograma con OCT: Arteria coronaria.]{Primera imagen obtenida con OCT de la arteria coronaria \emph{ex vivo}. Tomada de Huang \emph{et al.} \cite{Huang}}
+	\label{fig:primerOCTArteriaCoronaria}
+\end{figure}
+
+El ojo humano puede ser analizado ópticamente, es decir, es posible implementar técnicas para observar de manera directa la zona interior del ojo, lo que ha impulsado el uso de métodos de imagen en oftalmología; muchos de los primeros estudios realizados con OCT fueron realizados con base al ojo humano. Las primeras imágenes \invivo de la retina fueron obtenidas de manera independiente por Fercher \etal \cite{Fercher1993} y Swanson \etal \cite{Swanson1993} en 1993. Estos resultados conllevaron a que en la década de 1990 se diera un alto uso de OCT para el monitoreo, seguimiento, detección y diagnosis de diferentes enfermedades, entre las cuales destaca: enfermedades maculares \cite{Puliafito1995}, incluyendo agujeros maculares \cite{Hee1995_2} y edemas maculares \cite{Hee1995},  coriorretinopatía serosa central \cite{Hee1995_3}, y degeneraciones maculares asociadas a la edad y a la neovascularización coroidal \cite{Hee1995_4}. Un ejemplo de monitoreo con OCT, está en el espesor de las capas de fibra del nervio retinal, el cual es un indicador de glaucoma, y que puede cuantificarse en ojos normales y con glaucoma. Mediante una correlación con medidas convencionales de la estructura y función del nervio óptico, es posible encontrar focos de glaucoma, trabajo realizado también a partir de la OCT en 1995 por Schuman \etal \cite{Schuman1995}.
+
+La alta sensibilidad de la OCT permite producir imagen de estructuras tales como la retina, que poseen un bajo índice de dispersión de la luz, sin embargo, la mayor parte de las aplicaciones que emplean OCT requieren la captura de imágenes en tejidos que no son transparentes y además, son altamente dispersivos. En estos casos, es cuando la sensibilidad del método se vuelve relevante, ya que como la señal es fuertemente atenuada por la dispersión, la sensibilidad es quien determina la profundidad hasta la cual se puede conseguir imágenes \cite{Drexler2015}. Las primeras imágenes de tejidos diferentes al ojo, fueron posibles mediante el estudio de la influencia de la longitud de onda en la dispersión de la luz, en done se obtuvo que longitudes de onda más largas reducen la dispersión producida por la muestra e incrementa la profundidad de penetración de la imagen \cite{Brezinski1996, Schuman1995}. Uno de los primeros indicios del uso de distintas longitudes de onda se encuentra en la Fig.~\ref{fig:oct_longitudes_multiples} de Brezinski \etal \cite{Brezinski1996}, quienes muestran una imagen de OCT \exvivo en una epiglotis humana, comparando las imágenes de $850$ y $1300nm$ de longitud de onda \cite{Brezinski1996}. La imagen tomada en $1300nm$ provee una mayor penetración puesto que los principales absorbentes en la mayor parte de los tejidos son la melanina y hemoglobina, los cuales poseen una alta absorción en el visible y el infrarojo cercano \cite{Parsa1989}, mientras que la absorción del agua se convierte en dominante para mayores longitudes de onda, alrededor de los $1800-2000nm$. Por otro lado, en la mayor parte de los tejidos, la dispersión en las longitudes de onda del infrarrojo cercano es uno o dos ódernes de magnitud mayores que la absorción, y la dispersión disminuye para longitudes de onda más grandes.
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[width = \textwidth, keepaspectratio]{img/oct_longitudes_multiples}
+\caption[OCT empleando diferentes longitudes de onda.]{Profundidad de penetración de la OCT en diferentes longitudes de onda. Comparación de la atenuación producida por diferentes longitudes de onda en OCT, visualmente se aprecian más detalles cuando se emplea una longitud de onda de $1300nm$ que con $850nm$. Tomado de \cite{Brezinski1996}.}
+\label{fig:oct_longitudes_multiples}
+\end{figure}
+
+Muchos estudios iniciales de la OCT se realizaron \exvivo en especímenes quirúrgicos, estos estudios fueron útiles para definir las estructuras que serían posibles de observar usando OCT \cite{Brezinski1996} y compararlo con la histología (estudio de la composición, estructura y características de los tejidos orgánicos de los seres vivos). El estudio de la correlación entre las imágenes \exvivo de la  OCT y la histología se extendió a estudios hasta de enfermedades gastrointestinales \cite{Izatt1996, Tearney1997, Kobayashi1998, Pitris2000}, biliares \cite{Tearney1998}, en el aparato reproductor femenino \cite{Pitris1999}, pulmonares \cite{Pitris1998} y urinarias \cite{Tearney1997}.
+
+
+%\subsection{Áreas de desarrollo de la tomografía óptica coherente}
+\subsubsection{OCT en la oftalmología}
+
+%Como se ha mencionado, los inicios de la OCT fueron en oftalmología y hoy en día es una de las áreas con mayor impacto en esta área. OCT ha mostrado ser una técnica bastante útil en oftalmología porque puede identificar característica desde etapas tempranas enfermedades, de forma que se puedan realizar el tratamiento respecto para prevenir dichas enfermedades o incluso la perdida total. Además, si se realizan tratamientos periódicos, puede manternerse un monitoreo de la evolución de la terapia o enfermedad. %Uno de los primeros instrumentos para OCT en la retina diseñado y construido por Eric Swanson en los 90's se presenta en la Fig.~\ref{fig:oct_system_first}. La Fig.~\ref{fig:oct_primer_dispositivo_funcionamiento} muestra el esquema de funcionamiento del diseño diseño óptico para imágenes de la retina. Una lente objetivo produce una imagen de la retina en un plano intermedio, en donde es observado por el operario o por una cámara de video. El haz para OCT es acoplado en el instrumento mediante un divisor de haz, que a su vez es enfocado en el plano imagen intermedio usando una lente de relevo. Se produce imagen mediante la lente de relevo y el ojo de la persona analizada.
+%
+%\begin{figure}[ht!]
+%\centering
+%\includegraphics[width = \textwidth, keepaspectratio]{img/oct_system_first}
+%\caption[Primeros dispositivos para OCT.]{Este es uno de los primeros dispositivos para hacer imagen de la retina con OCT, este sistema fue desarrollado por el \textit{New England Eye Center}. Tomado de \cite{Drexler2015}.}
+%\caption{}
+%\label{fig:oct_system_first}
+%\end{figure}
+%
+%\begin{figure}[ht!]
+%\centering
+%\includegraphics[width = \textwidth, keepaspectratio]{img/oct_primer_dispositivo_funcionamiento}
+%\caption[Esquema del funcionamiento dispositivo para OCT.]{Esquema del funcionamiento dispositivo para OCT.}
+%\label{fig:oct_primer_dispositivo_funcionamiento}
+%\end{figure}
+
+
+\noindent Los inicios de OCT fueron en oftalmología, y hoy en día es una de las áreas con mayor impacto de esta técnica. La OCT ha mostrado ser una herramienta bastante útil en oftalmología, porque puede identificar característica de enfermedades desde etapas tempranas, de forma que se puedan realizar los tratamientos respectos para prevenir el desarrollo de dichas enfermedades. Además, si se realizan tratamientos periódicos, puede mantenerse un monitoreo de la evolución de la terapia o de la enfermedad. La OCT es una importante técnica para el diagnosis y monitoreo de enfermedades tales como el glaucoma, degeneración macular relacionada con la edad y retinopatía diabética, ya que provee información cuantitativa de la patología retinal, que mide el progreso de la enfermedad o la respuesta a la terapia \cite{Hee1998, Schuman1995,Schuman1996}. Las imágenes pueden analizarse cuantitativamente, pues es posible medir características tales como el espesor de la capa de fibra del nervio muscular. De estas técnicas, se han derivado otras aplicaciones relacionadas a OCT, tales como la obtención de mapas de espesor \cite{Hee1998}. Hee \etal \cite{Hee1998} construyeron mapas de profundidad mediante seis imágenes de OCT variando las orientaciones angulares a través de la fóvea, de forma que las imágenes fueron segmentadas para detectar el espesor retinal. Para su interpretación cuantitativa, la macula se divide en diferentes regiones y se promediaron los valores de espesor retinal. Este proceso de promediado permite crear estándares para evaluar el espesor retinal como un nuevo criterio para diagnosis, y desde allí puede determinarse la presencia de alguna patología.
+
+\subsubsection{La tecnología del OCT en catéteres y endoscopios}
+
+El desarrollo de catéteres y endocopios ha sido fundamental para la implementación de OCT al interior del cuerpo \cite{Tearney1996, Tearney 1997_2}. La Fig.~\ref{fig:oct_cateter} muestra uno de los primeros sistemas de catéteres/endoscopios para OCT, el dispositivo posee una fibra óptica de modo único en un cable hueco rotatorio acoplado a una lente y a un microprisma que refleja la luz de radialmente. El haz es escaneado mediante la rotación del cable para generar una imagen transversa de la estructuras iluminadas. El diseño de este tipo de dispositivos para imagen mediante catéteres representa un desafío, ya que hay múltiples requerimiento tanto mecánicos, como ópticos y de biocompatibilidad que se deben abordar.
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[width = \textwidth, keepaspectratio]{img/oct_cateter}
+\caption[OCT mediante catéteres.]{Ejemplo de los primeros catéteres empleados para OCT.}
+\label{fig:oct_cateter}
+\end{figure}
+
+
+\subsubsection{OCT intravascular}
+
+Una de las aplicaciones médicas más desarrolladas para OCT es la imagen intravascular. En la Fig.~\ref{fig:oct_intravascular_ultrasonido} se muestra una de las primeras imágenes de la arteria coronaria \emph{ex vivo} usando uno de los primeros prototipos de catéter para OCT, propuesto por Tearney \emph{et al.} \cite{Tearney1996_2}. La figura muestra una comparación entre OCT con ultrasonido intravascular(IVUS) a $30MHz$. La imagen de OCT muestra de forma clara la diferencia entre la túnica íntima, la túnica media y la túnica adventicia; y mostró la utilidad de OCT para imagen intravascular. En sus inicios, la OCT intravascular \invivo representó un gran desafío, pues debían diseñarse catéteres apropiados para el uso en humanos, además de esto, dado que la sangre dispersa altamente la luz, fue necesario la creación de un sistema de flujo salino o de contaste, de protocolos de oclusión de balón para remover la sangre o para diluir la hematocrita en el plano imagen. Los primeros estudios con OCT mediante endoscopios se realizaron en conejos por Fujimoto \etal en 1999 \cite{Fujimoto1999}, por otro lado hacia el año 2001, Jang \emph{et al.} reportaron la primer imagen mediante OCT en pacientes humanos \cite{Jang2001}. El área intravascular representa uno de las áreas actuales más activas en OCT, tanto desde un punto de vista comercial, como desde un punto de vista de investigación.
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[width = \textwidth, keepaspectratio]{img/oct_intravascular_ultrasonido}
+\caption[Comparación de OCT intravascular con ultrasonido]{Comparación de una imagen de OCT intravascular con ultrasonido (IVUS).}
+\label{fig:oct_intravascular_ultrasonido}
+\end{figure}
+
+
+\subsubsection{Endoscopías y detección de cáncer con OCT}
+
+El primer estudio de endoscopía \invivo con imágenes de OCT fue realizado en 1997 \cite{Tearney1997, Sergeev1997}, un ejemplo de los resultados obtenidos por Tearney \emph{et al.} se muestra en la Fig.~\ref{fig:oct_endoscopia_conejo}. En la figura se observan las capas del esófago \emph{in vivo} de un conejo, en ella estructuras tales como la mucosa(m), submucosa(sm), mucosa interna (im), mucosa externa (om), serosa(s) y los tejidos de soporte vascular (a) pueden apreciarse. Los primeros estudios de endoscopía con imagen OCT en humanos fueron reportados por Sergeev \etal en 1997 \cite{Sergeev1997} y Feldchtein \etal en 1998 \cite{Feldchtein1998}, en donde se tomaron imágenes mediante  una sonda de barrido delantero en el canal de estándar. Estos estudios mostraron la utilidad de realizar OCT para imagen clínica de órganos tales como el esófago, la laringe, el estomago, la vejiga urinaria y el cuello uterino.
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[width = \textwidth, keepaspectratio]{img/oct_endoscopia_conejo}
+\caption[Endoscopía \emph{in vivo} del esófago de un conejo.]{Endoscopía \emph{in vivo} del esófago de un conejo. En la imagen (a) pueden observarse las capas del esófago, entre las que se aprecia: la mucosa(m), submucosa(sm), mucosa interna (im), mucosa externa (om), serosa(s) y los tejidos de soporte vascular (a). (v) es una vena que puede observarse en la submucosa. (c) histología. Escala $500um$. Tomada de Tearney \emph{et al.} \cite{Tearney1997}}
+\label{fig:oct_endoscopia_conejo}
+\end{figure}
+
+Dado el crecimiento de casos de cáncer en el esófago, estomago y colon, la endoscopía gastrointestinal tuvo una mayor atención, en contraste con esto, los estudios iniciales de OCT mostraron una de las mayores ventajas de OCT para visualizar estructuras superficiales, ya que esta técnica permite no solo ver las capas superficiales, si no que adicionalmente puede observar morfologías de tejidos bajo la superficie, permitiendo diferenciar patologías gastrointestinales, tales como el esógafo de Barret, los pólipos adenomatosos y el adenocarcinoma \cite{Bouma1999, Sergeev1997, Rollins1999, Jackle2000, Jackle2000_2, Sivak2000}. Los estudios de OCT para detección de cáncer son complejos, ya que los resultados de OCT deben ser comparados con técnicas estandarizadas tales como la biopsia y la histopatología. La histopatología posee la ventaja de mejorar de manera selectiva el contraste entre la estructura de los tejidos y las células, y brinda imágenes de alta resolución para la visualización de morfologías en tejidos de mayor tamaño y de estructuras subcelulares. OCT por su parte, se basa en el contraste producido por las variaciones en las propiedades de dispersión de diferentes tejidos, y el problema surge dada la sensibilidad para detectar patologías y reducir el error en las muestras tomadas.
+
+\section{Tomografía óptica de coherencia: esquema}
+\label{sec:OCT_Esquema}
+
+\emph{La OCT es una técnica interferométrica que se basa en la interferencia de un campo óptico de banda ancha, es decir, que recoge múltiples longitudes de onda, el cual se divide y posteriormente se combina} \cite{Fercher}. Un esquema típico de OCT se muestra en la Fig. \ref{fig:OCT_Scheme}. 
+
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[width = \textwidth, keepaspectratio]{img/OCT_Scheme}
+	\caption[Esquema básico del OCT.]{Esquema básico del OCT, un interferómetro de Michelson se emplea para el escaneo de la muestra y la intereferencia de los haces.}
+	\label{fig:OCT_Scheme}
+\end{figure}
+
+El esquema de la OCT se basa esencialmente en un interferómetro de Michelson que funciona de la siguiente forma: Primero un haz que proviene de una fuente (LS) viaja a través de un divisor de haz. Los haces divididos a su vez viajan por dos caminos diferentes, la porción del haz de referencia se refleja en un espejo, mientras que la otra porción del haz es enviada hacia la muestra, en donde se refleja desde diferentes profundidades al interior de la muestra. \emph{Como el haz posee una banda ancha, la interferencia entre el campo óptico de referencia y el que es reflejado por la muestra solo puede ser observado cuando ambos brazos tengan diferencias de camino óptico que se encuentren dentro de la longitud de coherencia del haz. Por consiguiente, la resolución lateral de un sistema de OCT está determinado por la coherencia temporal de la fuente de luz}. Dentro de la longitud de coherencia, se define la longitud de ida y regreso de coherencia $l_c$ como:
+
+%Si la diferencia de camino óptico entre ambos brazos se encuentra dentro de la longitud de coherencia, se define el tamaño de ida y vuelta de longitud de coherencia $l_c$  como:
+
+\begin{equation}
+	\label{eq:l_c}
+	l_c = \frac{2\ln 2}{\pi} \frac{\bar{\lambda}}{\Delta \lambda},
+\end{equation}
+
+\noindent donde $\bar{\lambda}$ es la longitud de onda media y $\Delta \lambda$ es el ancho del espectro (banda), $l_c$ indica la condición para la cual es posible obtener interferencia.
+%
+%En el interferómetro de Michelson, la luz que proviene de la fuente hasta el interferómetro es dividida en dos haces, uno de referencia $E_r(t)$ y uno objeto o de medida $E_s(t)$ que viaja hacia la muestra. Si hay una diferencia de camino óptico, se puede representar la intensidad a la salida o en el plano de detección luego de recombinar ambos brazos como una medida proporcional al módulo cuadrado de la amplitud, de forma que:
+%
+%\begin{equation}
+% I_o \propto |E_r (t)|^2 + |E_s(r)|^2 + 2 E_r(t) E_s(t) \cos (2k\Delta L),
+%\end{equation}
+%
+%donde $k$ es el número de onda $k = 2\pi / \lambda$ y $\Delta L$ es la diferencia de camino óptico entre ambos brazos.
+
+En OCT, \emph{los objetos aparecen cuando se dan cambios precipitados en el índice de refracción entre profundidades o capas cercanas en la muestra, y se manifiestan como picos de intensidad en el patrón de interferencia}, note que la intensidad medida es aquella que proviene de la retrodispersión causada por la muestra. Por otro lado, es posible obtener un patrón de interferencia en el dominio del tiempo si se desplaza el espejo de referencia para cambiar el camino óptico del haz de referencia, y de esta forma, hacer que coincidan múltiples diferencias de camino óptico reflejadas por las capas de la muestra y el haz de referencia, realizando escaneos a diferentes profundidades. Debido a que el espectro es ancho, otra posibilidad de medir la información de profundidad en la muestra, es a través de las transformadas de Fourier, realizando mediciones sobre el dominio de las frecuencias y transformando el espectro de salida. En este caso, el haz de referencia permanece en una posición fija y las componentes frecuenciales del OCT se detectan mediante un espectrómetro.
+
+En OCT pueden realizarse escaneos bidimensionales si no se modifica la diferencia de camino, o escaneos tridimensional a través de la medición de diversas profundidades en la muestra, que pueden ser realizadas mediante escaneos laterales del haz en una o dos direcciones ortogonales. Valores típicos de escaneos para profundidad pueden ir en $500$ profundidades distribuidas en una distancia de $5mm$ \cite{Tomlins}. Si el medio es turbio, las profundidades obtenidas en la literatura han sido entre $1$ y $3mm$, empleado longitudes de onda entre $800$ y $1300nm$ \cite{Drexler2015}.
+
+Por último, algunas propiedades que cabe resaltar sobre OCT son las siguientes:
+\begin{itemize}
+	\item Alta resolución en imagen de profundidad.
+	\item Resolución en profundidad, con distancias que van desde $1\mu m$ hasta $5mm$.
+	\item Alta sensibilidad, permitiendo la captura de muestras poco dispersivas incluso en medios turbios.
+	\item OCT no es una técnica invasiva, que posibilita su uso \invivo.
+\end{itemize}
+
+\section{Interferometría de baja coherencia}
+
+Una de las características que hacen a OCT diferente a otras técnicas de imagen, tiene que ver con las imágenes con alta resolución axial, las cuales son obtenidas mediante interferencia de baja coherencia. En esta sección se entrará en el detalle matemático de lo que subyace en OCT. Considere un intereferómetro de Michelson, como se muestra en la Fig.~\ref{fig:octschememat}, este interferómetro es iluminado con una fuente policromátic, cuyo campo eléctrico $E_i$ puede expresarse en forma compleja como
+\begin{equation}
+	E_i(k,\omega) = s(k,\omega) e^{i(kz - \omega t)},
+\end{equation}
+donde $s(k,\omega)$ es la amplitud del campo eléctrico expresado como una función del número de onda $k = 2\pi /\lambda$ y de la frecuencia angular $\omega = 2\pi \nu$, que representan respectivamente la dependencia espacial y temporal de cada una de las componentes del espectro del campo con longitud de onda $\lambda$. 
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.7]{img/OCT_scheme_mat}
+\caption[Interferómetro para OCT.]{Interferómetro para OCT.}
+\label{fig:octschememat}
+\end{figure}
+
+
+
+
+
+
+
+
+\newpage
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.7\linewidth]{img/a_scan}
+\caption{Interpretación de la resolución axial, y los tipos de escaneos}
+\label{fig:ascan}
+\end{figure}
+
+
+
+\section{La relevancia de la OCT en la investigación actual}
+
+En la actualidad, OCT se ha posicionado como una de las áreas de mayor interés, tanto científico, médico, como comercial. Para ejemplificar esto, en la Fig.~\ref{fig:oct_pub_by_year} se muestra la cantidad de publicaciones relacionadas a OCT desde su aparición hacia 1991. En la figura se aprecia como en los últimos años ha habido un crecimiento exponencial en la cantidad de artículos publicados en el tema, siendo la oftalmología y el estudio cardiovascular las principales áreas de publicación de OCT, datos tomados del US National Library of Medicine National Institutes of Health (http://www.ncbi.nlm.nih.gov/pubmed). Sin embargo, pese su gran expansión, desarrollo y estudio, en latinoamerica son pocos, los grupos de investigación acogen en sus líneas de investigación la OCT, para mostrar esto, en la Fig.~\ref{fig:oct_groups_map_png} se muestra la distribución global de los grupos que publican en OCT. En estos datos sobresalen grupos de universidades como Harvard, la Universidad de California y el MIT, datos tomados del US National Library of Medicine National Institutes of Health (http://www.ncbi.nlm.nih.gov/pubmed). Por último, el mercado de OCT se encuentra en crecimiento, como se indica en la Fig.~\ref{fig:oct_market}, en donde se aprecia que los ingresos de las compañías que producen equipos e indumentaria para OCT para el año 2015 cerró en alrededor de $800$ millones de dólares, lo que muestra un alto potencia para la comercialización e investigación en áreas relacionadas a la OCT, datos tomados del IOVS: Investigative Ophthalmology \& Visual Science.
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[width = \textwidth, keepaspectratio]{img/oct_pub_by_year}
+\caption[Citaciones sobre OCT en los últimos años.]{Citaciones sobre OCT en los últimos años. Tomado de http://www.ncbi.nlm.nih.gov/pubmed .}
+\label{fig:oct_pub_by_year}
+\end{figure}
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[width = \textwidth, keepaspectratio]{img/oct_groups_map_png}
+\caption[Mapa global de los grupos que investigan en OCT.]{Mapa global de los grupos que investigan en OCT. Tomada del Insihgt: OCT market http://www.sweptlaser.com/OCT-market .}
+\label{fig:oct_groups_map_png}
+\end{figure}
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[width = \textwidth, keepaspectratio]{img/oct_market}
+\caption[Mercado de OCT.]{Mercado de la OCT en los últimos años, datos tomados de: http://iovs.arvojournals.org/.}
+\label{fig:oct_market}
+\end{figure}
+
+%\subsection{Objetivos}
+%\subsubsection{Objetivo general}
+%
+%%Desarrollar métodos de optimización en paralelo para la identificación de objetos de fase para la tomografía óptica coherente para diagnosis médico.
+%%Mejorar la identificación de objetos de fase en tomografía óptica coherente mediante optimización en paralelo, que ayuden en el diagnosis médico.
+%Estabilizar mediante posprocesamiento la fase en tomografía óptica de coherencia.
+%
+%\subsubsection{Objetivos específicos}
+%
+%\begin{itemize}
+%	\item Identificar el estado de arte de la tomografía óptica coherente en aplicaciones biomédicas.
+%%	\item Implementar un sistema óptico equivalente a los montajes utilizados durante la primera generación de la tomografía óptica coherente.
+%	\item Implementar un sistema óptico de prueba de concepto de campo completo en la tomografía de coherencia óptica.
+%%	\item Simular un volumen de datos que represente un objeto característico encontrados en la tomografía óptica coherente.
+%%	\item Simular un volumen de datos que posea las características de los objetos que se pueden encontrar en la tomografía óptica coherente, incluyendo las corrupciones de fase provenientes del muestreo.
+%	\item Realizar una simulación del muestreo y la formación de imagen en tomografía óptica de coherencia, incluyendo elementos de corrupción de fase.
+%%	\item Desarrollar y aplicar un método de optimización de fase que permita encontrar las características del objeto simulado anteriormente.
+%	\item Desarrollar un método de optimización de fase que permita recuperar el mapa de corrupción de la imagen simulada anteriormente.
+%%	\item Definir una métrica del error para evaluar la convergencia del algoritmo de optimización propuesto.
+%	\item Comprobar experimentalmente la funcionalidad del algoritmo propuesto con datos experimentales suministrados por el \emph{Wellman Center for Photomedicine, Harvard Medical School and Massachusetts General Hospital}.
+%\end{itemize}
+
+
+%\section{Conclusión}
+
